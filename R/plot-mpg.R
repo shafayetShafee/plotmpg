@@ -17,7 +17,7 @@
 #' plot_mpg(NULL, NULL)
 #' @importFrom ggplot2 ggplot aes facet_wrap geom_point vars
 #' @importFrom rlang .data
-plot_mpg <- function(colour_var, facet_var) {
+plot_mpg <- function(colour_var = NULL, facet_var = NULL) {
   mapping <- aes(.data$displ, .data$hwy, colour = .data[[colour_var]])
 
   if(is.null(colour_var)) {

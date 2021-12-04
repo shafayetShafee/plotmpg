@@ -1,3 +1,23 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+context("test-plot-mpg")
+
+test_that("plot_mpg() works", {
+  vdiffr::expect_doppelganger(
+    "plot_mpg(), defaults",
+    plot_mpg()
+  )
+
+  vdiffr::expect_doppelganger(
+    "plot_mpg(), with NULL colour and facet",
+    plot_mpg(colour_var = NULL, facet_var = NULL)
+  )
+
+  vdiffr::expect_doppelganger(
+    "plot_mpg(), with colour var",
+    plot_mpg(colour_var = "class")
+  )
+
+  vdiffr::expect_doppelganger(
+    "plot_mpg(), with facet var",
+    plot_mpg(facet_var = "class")
+  )
 })

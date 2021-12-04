@@ -4,7 +4,7 @@
 \alias{plot_mpg}
 \title{Plot the mpg dataset's displ and hwy variable}
 \usage{
-plot_mpg(colour_var, facet_var)
+plot_mpg(colour_var = NULL, facet_var = NULL)
 }
 \arguments{
 \item{colour_var}{A variable name as a string to use as a
