@@ -18,10 +18,14 @@ devtools::install_github("shafayetShafee/plotmpg")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which showing the functionality of this one function
+package:
+
+To plot a scatterplot of `displ` and `hwy` with `class` as facet variable
+and `drv` as colour variable, we can do this
 
 ``` r
 library(plotmpg)
-## basic example code
+plot_mpg("class", "drv")
 ```
 
