@@ -4,14 +4,16 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of plotmpg is to ...
+The goal of plotmpg is to provide a function for plotting `displ` and `hwy`
+variable of mpg dataset with different color and facet variable
 
 ## Installation
 
-You can install the development version of plotmpg like so:
+You can install the development version of plotmpg from [GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("shafayetShafee/plotmpg")
 ```
 
 ## Example
